@@ -1,0 +1,7 @@
+fruit <- c("Apple", "Banana", "Carrot", "Date", "Elderberry")
+rank <- c(1,2,3,4,5)
+fruit_ranks <- data.frame(fruit, rank)
+head(fruit_ranks)
+glimpse(fruit_ranks)
+str(fruit_ranks)
+mutate(fruit_ranks, colour = "red", "green", "yellow", "purple", "white")

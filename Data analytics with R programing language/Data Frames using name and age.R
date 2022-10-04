@@ -1,0 +1,8 @@
+names <- c("Quasim", "Ibrahim", "Abdulhamid", "Maryam")
+age <- c(30,27,23,20 )
+people <- data.frame(names, age)
+head(people)
+str(people)
+glimpse(people)
+colnames(people)
+mutate(people, age_in_20 = age + 20)
