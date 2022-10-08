@@ -7,7 +7,7 @@ penguins2 %>% arrange(bill_length_mm)
 #To arrange in descending order
 penguins2 %>% arrange(-bill_length_mm)
 #To save as dataframe
-penguins3 <- penguins2 %>% arrange(-bill_length_mm)
+penguins3 <- penguins2 %>% arrange(bill_length_mm)
 #To viewe our dataframe
 view(penguins3)
 #To group by without NAs a certain column, summarize and mean of a column
