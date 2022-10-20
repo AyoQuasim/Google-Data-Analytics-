@@ -16,7 +16,8 @@ skimr::skim_without_charts(penguins)
 glimpse(penguins)
 #To get first few rows of the data set
 head(penguins)
-#To select a specific column (specie) from the data set, we can use pipe " %>% " ctrl+shift+m
+#To select a specific column (specie) from the data set,
+#we can use pipe " %>% " ctrl+shift+m
 #selecting specie column 
 penguins %>% 
   select(species)

@@ -7,7 +7,7 @@ bookings_df <- read_csv("hotel_bookings.csv")
 head(bookings_df)
 # summaries of each column in the data arranged horizontally
 str(bookings_df)
-#To see collomn names of the data
+#To see column names of the data
 colnames(bookings_df)
 #to create new data frame called new_df
 new_df <- select(bookings_df, `adr`, adults)

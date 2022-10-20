@@ -1,0 +1,36 @@
+---
+title: "visualization with color,shape and alpha"
+author: "Adebayo Ayobami"
+date: "2022-10-16"
+output: html_document
+---
+
+## Setting up my environment
+Notes: setting up an r environment by installing and loading tidyverse
+and palm penguins packages
+
+```{r ggplot for penguin data}
+
+library(ggplot2)
+
+library(palmerpenguins)
+
+data(penguins)
+
+View(penguins)
+```
+
+```{r ggplot for penguin data visualization}
+
+ggplot(data = penguins) +
+
+  geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+
+```
+
+```{r}
+ggplot(data = penguins) + 
+  geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g,alpha=species))
+```
+
+
